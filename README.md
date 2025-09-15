@@ -27,11 +27,3 @@ In this module you will learn how SnapStart addresses Java function performance.
 
 ![Unicorn Stock Broker API](resources/unicorn-stock-broker-inital.png)
 
-## Security
-
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
-
-## License
-
-This library is licensed under the MIT-0 License. See the LICENSE file.
-
