@@ -1,0 +1,43 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+  - package-ecosystem: maven
+    directories:
+      - "**/*"
+    schedule:
+      interval: "weekly"
+    groups:
+      awssdk:
+        patterns:
+          - "software.amazon.awssdk:*"
+      spring:
+        patterns:
+          - "org.springframework.*:*"
+      lambda-events-lib:
+        patterns:
+          - "com.amazonaws:aws-lambda-java-events"
+      slf4j:
+        patterns:
+          - "org.slf4j:*"
+      junit:
+        patterns:
+          - "org.junit*:*"
+      postgresql:
+        patterns:
+          - "org.postgresql:*"
+      maven-compiler-plugin:
+        patterns:
+          - "org.apache.maven.plugins:maven-compiler-plugin"
+      jackson:
+        patterns:
+          - "com.fasterxml.jackson.*:*"
+    open-pull-requests-limit: 20
+  - package-ecosystem: docker
+    directories:
+      - "**/*"
+    schedule:
+      interval: "weekly"

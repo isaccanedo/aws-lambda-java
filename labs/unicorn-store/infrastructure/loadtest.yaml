@@ -1,0 +1,16 @@
+config:
+  phases:
+    - duration: 60
+      arrivalRate: 25
+      name: Load testing the Unicorn Store API for 60 seconds with 25 concurrent requests/s
+  http:
+    timeout: 29
+scenarios:
+  - flow:
+      - post:
+          url: "{{ url }}"
+          json:
+            name: "Big Unicorn"
+            age: "Quite old"
+            type: "Beautiful"
+            size: "Very big"
