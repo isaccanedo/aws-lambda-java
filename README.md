@@ -1,4 +1,4 @@
-### Java on AWS Lambda Workshop
+# Java on AWS Lambda Workshop
 
 This project contains the code for the Java on AWS Lambda workshop.
 You can find the content and instructions for the workshop [here](https://catalog.workshops.aws/java-on-aws-lambda).
